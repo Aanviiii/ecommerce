@@ -6,7 +6,7 @@ spring:
     mongodb:
       # OPTION 1: MongoDB Atlas (Cloud) - RECOMMENDED
       # Replace <username>, <password>, and cluster URL with your details
-      uri: mongodb+srv://Aanvi:140304mn@cluster0.pzgvszh.mongodb.net/?appName=Cluster0
+      uri:
 
 
       # OPTION 2: Local MongoDB - Uncomment these lines and comment out uri above
