@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: ecommerce-api
+
+  data:
+    mongodb:
+      # OPTION 1: MongoDB Atlas (Cloud) - RECOMMENDED
+      # Replace <username>, <password>, and cluster URL with your details
+      uri: mongodb+srv://Aanvi:140304mn@cluster0.pzgvszh.mongodb.net/?appName=Cluster0
+
+
+      # OPTION 2: Local MongoDB - Uncomment these lines and comment out uri above
+      # host: localhost
+      # port: 27017
+      # database: ecommerce
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.example.ecommerce: INFO
+    org.springframework.data.mongodb: INFO
+
+# Custom application properties
+app:
+  mock-payment:
+    enabled: true
+    webhook-delay-seconds: 3
+    base-url: http://localhost:8081
